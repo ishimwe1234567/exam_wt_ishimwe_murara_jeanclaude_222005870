@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Debt Management Course Platform</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      background-image: url('cours3.jpeg'); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      transition: background-image 2s ease-in-out; 
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.5);  
+      color: #fff;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      position: relative; 
+      z-index: 2; 
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul li a.active {
+      font-weight: bold;
+    }
+
+    .sub-nav {
+      margin-left: auto;
+    }
+
+    .sub-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .sub-nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .sub-nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    .sub-nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .search-form {
+      position: fixed;
+      top: 50px;
+      right: 30px;
+      z-index: 999;
+    }
+
+    .hero {
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: relative; 
+      z-index: 2;
+    }
+
+    .upload-form {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .upload-input {
+      display: none;
+    }
+
+    .upload-label {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cancel-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ccc;
+      color: #333;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .book-preview {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Online Debt Management Course Platform</h1>
+      <!-- Sub-navigation bar -->
+      <div class="sub-nav">
+        <ul>
+          <!-- Add relevant sub-navigation links for the platform -->
+        </ul>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="./login.html">Log Out</a></li>
+        </ul>
+        <div class="search-form">
+      <!-- Search form -->
+      <form role="search" action="search.php">
+        <input class="form-control" type="search" placeholder="search..." aria-label="search" name="query">
+        <button class="btn" type="submit">search</button>
+      </form>
+    </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to our Online Debt Management Course Platform</h2>
+      <p>Discover a wide selection of debt management courses.</p>
+      <a href="./browse.html" class="btn">Browse Courses</a>
+    </div>
+  </section>
+
+  <center>
+    <script>
+  // JavaScript for background image slideshow
+  var images = ['images26.jpeg', 'images.jpeg', 'timages.jpg','th.jpeg']; 
+  var currentIndex = 0;
+
+  function changeBackground() {
+    document.body.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+    currentIndex = (currentIndex + 1) % images.length;
+    setTimeout(changeBackground, 5000); // Change image every 5 seconds
+  }
+
+  changeBackground(); // Start the slideshow
+  </script>
+    </center>
+  </body>
+  </html>
